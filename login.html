@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Buttons - Kaiadmin Bootstrap 5 Admin Dashboard</title>
+    <title>Lavacar</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -56,17 +56,17 @@
                 height="20"
               />
             </a>
-            <div class="nav-toggle">
+            <!-- <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
                 <i class="gg-menu-right"></i>
               </button>
               <button class="btn btn-toggle sidenav-toggler">
                 <i class="gg-menu-left"></i>
               </button>
-            </div>
-            <button class="topbar-toggler more">
+            </div> -->
+            <!-- <button class="topbar-toggler more">
               <i class="gg-more-vertical-alt"></i>
-            </button>
+            </button> -->
           </div>
           <!-- End Logo Header -->
         </div>
@@ -355,7 +355,7 @@
             <!-- End Logo Header -->
           </div>
           <!-- Navbar Header -->
-          <nav
+          <!-- <nav
             class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
           >
             <div class="container-fluid">
@@ -706,7 +706,7 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav> -->
           <!-- End Navbar -->
         </div>
 
@@ -1155,9 +1155,6 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Formulário de Serviço</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
             </div>
             <div class="modal-body">
               <!-- Formulário -->
@@ -1185,7 +1182,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-secondary" id="fechar">Fechar</button>
               <button type="button" class="btn btn-primary" id="fazer_agendamento">Salvar</button>
             </div>
           </div>
@@ -1449,6 +1446,12 @@
 
      <script>
       $(document).on("click", "#fazer_agendamento", function() {
+
+      })
+     </script>
+
+     <script>
+      $(document).on("click", "#fechar", function() {
         $('#exampleModal').modal('hide');
       })
      </script>
